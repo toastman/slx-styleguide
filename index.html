@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Style guide</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet'>
+    <link href="https://kendo.cdn.telerik.com/2015.3.1111/styles/kendo.common-material.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2015.3.1111/styles/kendo.material.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="examples-code/styles.css" />
+
+    <link href="dist/css/styleguide.css" rel="stylesheet">
+    <script src="dist/app.bundle.js"></script>
+</head>
+
+<body>
+    <div class="examples-header">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">Worklinx style guide</h1>
+                <p class="lead">This is the first version of worklinx style guide.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="example" class="k-content">
+            <div class="column">
+
+
+                <h3>Button</h3>
+                <button class="k-button slx-button">A button</button>
+                <button class="k-button slx-button">Another one</button>
+
+
+                <h3>Menu</h3>
+                <ul data-role="menu">
+                    <li>First
+                        <ul>
+                            <li>Sub Item 1</li>
+                            <li>Sub Item 2
+                                <ul>
+                                    <li>Sub Item 1</li>
+                                    <li>Sub Item 2</li>
+                                    <li>Sub Item 3</li>
+                                    <li>Sub Item 4</li>
+                                </ul>
+                            </li>
+                            <li>Sub Item 3</li>
+                            <li>Sub Item 4</li>
+                        </ul>
+                    </li>
+                    <li>Second</li>
+                    <li disabled="disabled">Disabled</li>
+                </ul>
+
+
+                <h3>Grid</h3>
+                <div
+                    class="slx-grid"
+                    data-role="grid"
+                    data-bind="source: sharedDataSource"
+                    data-scrollable="false"
+                    data-selectable="true"
+                    data-filterable="true"
+                    data-sortable="{ allowUnsort: false }"
+                    data-columns="[
+                {field:'year',title:'Year',width:100},
+                {field:'value',title:'Estimated Users'}
+            ]"></div>
+
+
+                <h3>TabStrip</h3>
+                <div data-role="tabstrip">
+                    <ul>
+                        <li class="k-state-active">First Tab</li>
+                        <li>Second Tab</li>
+                    </ul>
+                    <div>
+                        <p>TabStrip sample content, first tab</p>
+                    </div>
+                    <div>
+                        <p>TabStrip sample content, second tab</p>
+                    </div>
+                </div>
+
+
+                <h3>PanelBar</h3>
+                <ul data-role="panelbar">
+                    <li class="k-state-active">Item 1
+                        <ul>
+                            <li>Item 1.1</li>
+                            <li>Item 1.2</li>
+                            <li>Item 1.3</li>
+                        </ul>
+                    </li>
+                    <li>Item 2
+                        <ul>
+                            <li>Item 2.1</li>
+                            <li>Item 2.2</li>
+                            <li>Item 2.3</li>
+                        </ul>
+                    </li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+            <div class="column">
+
+
+                <h3>Pickers</h3>
+                <input data-role="autocomplete" data-bind="source: countries" />
+                <input data-role="dropdownlist" data-bind="source: countries" />
+                <input data-role="combobox" data-bind="source: countries" />
+                <input data-role="datepicker" data-bind="value: today" />
+                <input data-role="timepicker" data-bind="value: today" />
+                <input data-role="numerictextbox" type="number" min="0" max="10" value="5" />
+                <select data-role="multiselect" data-bind="source: countries, value: multiSelectValue" multiple="multiple"></select>
+                <input data-role="colorpicker" />
+                <div class="sub-column">
+                    <h3>Checkboxes and Radio buttons</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="checkbox" class="k-checkbox">
+                            <label class="k-checkbox-label" for="checkbox">Checkbox</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checked-checkbox" class="k-checkbox" checked="checked">
+                            <label class="k-checkbox-label" for="checked-checkbox">Checked</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="disabled-checkbox" class="k-checkbox" disabled>
+                            <label class="k-checkbox-label" for="disabled-checkbox">Disabled</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="radio" name="radio" id="radio" class="k-radio">
+                            <label class="k-radio-label" for="radio">Checkbox</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio" id="checked-radio" class="k-radio" checked="checked">
+                            <label class="k-radio-label" for="checked-radio">Checked</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio" id="disabled-radio" class="k-radio" disabled>
+                            <label class="k-radio-label" for="disabled-radio">Disabled</label>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <h3>Slider</h3>
+                <input data-role="slider" type="number" min="0" max="10" value="5" />
+
+
+                <h3>TreeView</h3>
+                <ul data-role="treeview" style="height: 140px">
+                    <li data-expanded="true">Item 1
+                        <ul>
+                            <li>Item 1.1</li>
+                            <li>Item 1.2</li>
+                            <li>Item 1.3</li>
+                        </ul>
+                    </li>
+                    <li>Item 2
+                        <ul>
+                            <li>Item 2.1</li>
+                            <li>Item 2.2</li>
+                            <li>Item 2.3</li>
+                        </ul>
+                    </li>
+                    <li>Item 3</li>
+                </ul>
+
+
+                <h3>Window</h3>
+                <div id="window-container"></div>
+                <div data-role="window" data-append-to="#window-container" data-title="Sample title" data-draggable="false" data-resizable="false" data-width="100%" data-height="100">
+                    Sample content
+                </div>
+            </div>
+            <div class="column">
+
+
+                <h3>Upload</h3>
+                <input data-role="upload" type="file" />
+
+
+                <h3>Calendar</h3>
+                <div data-role="calendar"></div>
+
+
+                <h3>Splitter</h3>
+                <div data-role="splitter" style="height: 120px;">
+                    <div>Left pane</div>
+                    <div>Right pane</div>
+                </div>
+
+
+                <h3>Progress bar</h3>
+                <div data-role="progressbar" data-value="40" style="width: auto"></div>
+
+
+                <h3>Notifications</h3>
+                <div id="notification"></div>
+            </div>
+            <div id="scheduler"></div>
+            <div class="column">
+                <div id="area-chart"></div>
+                <div id="bubble-chart"></div>
+            </div>
+            <div class="column">
+                <div id="mixed-chart"></div>
+                <div id="linear-gauge"></div>
+            </div>
+            <div class="column">
+                <div id="pie-chart"></div>
+                <div id="radial-gauge"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

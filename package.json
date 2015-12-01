@@ -1,0 +1,33 @@
+{
+  "name": "slx-styleguide",
+  "version": "0.0.4",
+  "description": "This is slx style guide",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config-prod.js",
+    "start": "webpack-dev-server --config webpack.config-dev.js"
+  },
+  "author": "Andrii Vandakurov",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "less-loader": "^2.2.2",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap.git#v4-dev",
+    "exports-loader": "^0.6.2",
+    "imports-loader": "^0.6.5"
+  }
+}

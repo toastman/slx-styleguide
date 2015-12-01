@@ -1,0 +1,13 @@
+@import '../libs/kendoui/styles/kendo.common-bootstrap.min.css';
+// @import '../libs/kendoui_custom_theme/kendo.custom.css';
+
+@import '../examples-code/examples_header.scss';
+
+@import 'variables.scss';
+
+@import './components/_buttons.scss';
+@import './components/_grid.scss';
+
+body {
+    font-family: Arial, sans-serif;
+}
