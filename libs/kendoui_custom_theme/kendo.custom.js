@@ -3,16 +3,14 @@
 kendo.dataviz.ui.registerTheme('newTheme', {
     "chart": {
         "title": {
-            "color": "#ff0000"
+            "color": "#444444"
         },
         "legend": {
             "labels": {
                 "color": "#444444"
             }
         },
-        "chartArea": {
-            "background": "#525252"
-        },
+        "chartArea": {},
         "seriesDefaults": {
             "labels": {
                 "color": "#444444"

@@ -1,0 +1,19 @@
+{
+  "name": "slx-styleguide",
+  "description": "This is slx style guide",
+  "main": "",
+  "authors": [
+    "Andrii Vandakurov"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
